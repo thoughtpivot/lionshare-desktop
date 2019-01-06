@@ -1,18 +1,21 @@
 {
-  "name": "Lionshare",
+  "name": "lionshare-desktop",
   "version": "1.1.0",
   "description": "Simple cryptocurrency portfolio for OS X",
-  "main": "desktop/index.js",
+  "main": "./desktop/index.js",
+  "bin": {
+    "lionshare": "./desktop/index.js"
+  },
   "scripts": {
     "clean": "./node_modules/.bin/rimraf desktop/dist dist/*",
-    "build:webpack": "cross-env NODE_ENV=production BUILD_DEV=false webpack --config desktop/webpack/webpack.config.prod.js --progress --colors --display-error-details",
+    "build:webpack": "npx cross-env NODE_ENV=production BUILD_DEV=false webpack --config desktop/webpack/webpack.config.prod.js --progress --colors --display-error-details",
     "build": "npm run clean && npm run build:webpack",
     "pack": "npm run build && build --dir",
     "dist": "npm run build && build",
     "start": "ENV=development electron desktop",
-    "dev": "concurrently -k 'node desktop/server.dev.js' 'npm start'",
-    "lint": "eslint 'src/**/*.js' --quiet",
-    "lint:staged": "lint-staged",
+    "dev": "npx concurrently -k 'node desktop/server.dev.js' 'npm start'",
+    "lint": "npx eslint 'src/**/*.js' --quiet",
+    "lint:staged": "npx lint-staged",
     "prettier": "prettier 'src/**/*.js' 'desktop/**/*.js' --write --single-quote --trailing-comma es5"
   },
   "pre-commit": "lint:staged",
@@ -34,6 +37,7 @@
   "author": "Jori Lallo <jori@coinbase.com>, Ben Jennings <ben@coinbase.com>, Maksim Stepanenko <maksim@coinbase.com>",
   "license": "MIT",
   "dependencies": {
+    "concurrently": "^3.3.0",
     "auto-launch": "^5.0.1",
     "babel-core": "^6.4.5",
     "babel-eslint": "^7.1.1",
@@ -59,7 +63,6 @@
     "universal-analytics": "^0.4.8"
   },
   "devDependencies": {
-    "concurrently": "^3.3.0",
     "cross-env": "^1.0.7",
     "css-loader": "^0.23.1",
     "dotenv": "^2.0.0",
