@@ -1,2 +1,2 @@
-import EditAssets from './EditAssets';
+import EditAssets from "./EditAssets";
 export default EditAssets;

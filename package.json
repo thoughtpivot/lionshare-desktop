@@ -39,6 +39,9 @@
     "author": "Jori Lallo <jori@coinbase.com>, Ben Jennings <ben@coinbase.com>, Maksim Stepanenko <maksim@coinbase.com>",
     "license": "MIT",
     "dependencies": {
+        "@types/eslint": "^4.16.5",
+        "@types/prop-types": "^15.5.8",
+        "@types/react": "^16.7.18",
         "auto-launch": "^5.0.5",
         "babel-core": "^6.26.3",
         "babel-eslint": "^10.0.1",
