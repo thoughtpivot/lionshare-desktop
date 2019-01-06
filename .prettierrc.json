@@ -1,5 +1,5 @@
 {
-    "insertPragma": true,
+    "insertPragma": false,
     "printWidth": 120,
     "trailingComma": "all",
     "bracketSpacing": true,
@@ -11,17 +11,7 @@
     "overrides": [
         {
             "files": "*.{js,jsx,json,css,scss,md}",
-            "excludeFiles": [
-                "public/*",
-                "private/*",
-                "static/*",
-                "assets/*",
-                "logs/*",
-                "cache/*",
-                "node_modules/*",
-                "hooks/*",
-                ".vscode/*"
-            ]
+            "excludeFiles": ["dist/*", "node_modules/*"]
         }
     ],
     "endOfLine": "lf",

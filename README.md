@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Lionshare Desktop
 
 ![1-diwz_x9p3c86sfo-gydi5a](https://cloud.githubusercontent.com/assets/31465/22240931/0e1f9c58-e1d2-11e6-9c28-d7cbd3b3f03b.png)
@@ -38,12 +40,11 @@ There is a fairly straight forward library available on NPM called "lionshare" w
 
     npm -i lionshare
 
-
 ### Starting Lionshare
 
 Running Lionshare is pretty straight forward. From the root directory where you installed it, siimply type the following command...
 
-    yarn start
+    yarn run dev
 
 ## About
 
@@ -51,15 +52,14 @@ Lionshare is an open source project created by [Ben Jennings](https://twitter.co
 
 ## What Do Others Say ?
 
-[**Blog: Announcing Lionshare**]
-(https://medium.com/@jorilallo/announcing-lionshare-541daf082160)
+[**Blog: Announcing Lionshare**](https://medium.com/@jorilallo/announcing-lionshare-541daf082160)
 
 ## Donate
 
 Lionshare is an open source side project. To support development and keep our server running, you can donate using Bitcoin and Ethereum:
 
-- Bitcoin: `14cYsomReqcsznbKTuW6Mh91uZm2j2AF5B`
-- Ethereum: `0xbBC664b891D6Fc7EBF516594D690e370C5C32A9f`
+-   Bitcoin: `14cYsomReqcsznbKTuW6Mh91uZm2j2AF5B`
+-   Ethereum: `0xbBC664b891D6Fc7EBF516594D690e370C5C32A9f`
 
 ## FAQ
 
@@ -77,7 +77,7 @@ We won't, this is a side project.
 
 **When can I have a Linux, Windows, iOS, etc version?**
 
-We are eager to say that we're gaining real ground on supporting Windows and Linux desktop environments. As I'm sure you are all well aware, we have a highly useful mobile version for iOS now available on the App Store.  We will keep the community posted as we continue to expand our supported platforms.
+We are eager to say that we're gaining real ground on supporting Windows and Linux desktop environments. As I'm sure you are all well aware, we have a highly useful mobile version for iOS now available on the App Store. We will keep the community posted as we continue to expand our supported platforms.
 
 ## License
 
