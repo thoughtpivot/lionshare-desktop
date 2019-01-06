@@ -32,6 +32,13 @@ For those of you interested in contributing to the project, or, just want to tin
     $ cd lionshare-desktop
     $ yarn
 
+### Lionshare API
+
+There is a fairly straight forward library available on NPM called "lionshare" which allows a developer to take advantage of some of the efforts we've made to bring you a solid API backend for the Lionshare suite of products. They can be installed easily via the node packagemanager. Detailed instructions on how to use the library are included with the package...
+
+    npm -i lionshare
+
+
 ### Starting Lionshare
 
 Running Lionshare is pretty straight forward. From the root directory where you installed it, siimply type the following command...
