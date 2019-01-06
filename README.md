@@ -2,43 +2,50 @@
 
 ![1-diwz_x9p3c86sfo-gydi5a](https://cloud.githubusercontent.com/assets/31465/22240931/0e1f9c58-e1d2-11e6-9c28-d7cbd3b3f03b.png)
 
-[**Blog: Announcing Lionshare**](https://medium.com/@jorilallo/announcing-lionshare-541daf082160)
+Lionshare is a simple portfolio visualiztion application that helps gives insight into your investmnt performance. By design it will run on macOS, Windows and Linux desktop environments. Although at present we discourage any attempts to run a stable version on any platform other than macOS, for now.
 
-Lionshare is a simple macOS application that helps you track cryptocurrencies and
-your portfolio. Build using Electron, React and Mobx.
+## Key Features
 
-For the API and other parts of the Lionshare herd, checkout our [Github page](https://github.com/lionsharecapital)
-or get in touch with us on [Twitter](https://twitter.com/getlionshare).
+Leveraging a highly responsive and intuitive interface, it gives you near real-time insight into the performance of your digital asset performance while keepings the featureset simple, yet, informative.
 
-_Special thanks to [Coinbase](http://coinbase.com/) for sponsoring the release of Lionshare as open source software. If you’re interested in building products to reinvent the future of finance, [get in touch](https://www.coinbase.com/careers)._
+Initially we've focused on some the most highly utilized digital asset exchanges in the world, and at present pulls market data from coinmarketcap. The leader in providing up-to-date information with respect to the ever changing landscape of digital currency.
 
+## Installation
 
-## Development
+### Lionshare Stable
 
-Electron specific code, including application configuration and Webpack build files,
-can be found under `desktop/`. All React application code is stored inside `src/`.
+Until we have stable releases available our website, you can download stable releases directly from our GitHub repository...
 
-### Installation
+    npm -i  https://github.com/lionsharecapital/lionshare-desktop/archive/v1.1.0.tar.gz
 
-To install for development, clone the repository and install the dependencies with `yarn`.
+### Lionshare Beta
 
-```bash
-$ git clone git@github.com:lionsharecapital/lionshare-desktop.git
-$ cd lionshare-desktop
-$ yarn
-```
+If you're interested in the cutting edge features being developed by the team which are not yet ready for a formal release to the greater public, feel free to snag the latest revision from our GitHub repository...
 
-### Running
+    npm -i -g lionsharecapital/lionshare-desktop
 
-To run development application and Webpack server:
+### Lionshare Development
 
-```
-yarn run dev
-```
+For those of you interested in contributing to the project, or, just want to tinker with the code, you can clone our GitHub repository...
+
+    $ git clone git@github.com:lionsharecapital/lionshare-desktop.git
+    $ cd lionshare-desktop
+    $ yarn
+
+### Starting Lionshare
+
+Running Lionshare is pretty straight forward. From the root directory where you installed it, siimply type the following command...
+
+    yarn start
 
 ## About
 
 Lionshare is an open source project created by [Ben Jennings](https://twitter.com/benjennin_gs), [Jori Lallo](https://twitter.com/jorilallo) and [Maksim Stepanenko](https://twitter.com/maksim_s).
+
+## What Do Others Say ?
+
+[**Blog: Announcing Lionshare**]
+(https://medium.com/@jorilallo/announcing-lionshare-541daf082160)
 
 ## Donate
 
@@ -63,7 +70,7 @@ We won't, this is a side project.
 
 **When can I have a Linux, Windows, iOS, etc version?**
 
-Right now we're focused on supporting macOS but open to adding support for other platforms in the future.
+We are eager to say that we're gaining real ground on supporting Windows and Linux desktop environments. As I'm sure you are all well aware, we have a highly useful mobile version for iOS now available on the App Store.  We will keep the community posted as we continue to expand our supported platforms.
 
 ## License
 
