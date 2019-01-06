@@ -1,0 +1,29 @@
+{
+    "insertPragma": true,
+    "printWidth": 120,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "useTabs": false,
+    "tabWidth": 4,
+    "semi": true,
+    "singleQuote": false,
+    "arrowParens": "always",
+    "overrides": [
+        {
+            "files": "*.{js,jsx,json,css,scss,md}",
+            "excludeFiles": [
+                "public/*",
+                "private/*",
+                "static/*",
+                "assets/*",
+                "logs/*",
+                "cache/*",
+                "node_modules/*",
+                "hooks/*",
+                ".vscode/*"
+            ]
+        }
+    ],
+    "endOfLine": "lf",
+    "htmlWhitespaceSensitivity": "css"
+}
