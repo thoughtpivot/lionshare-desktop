@@ -4,7 +4,7 @@
   "description": "Simple cryptocurrency portfolio for OS X",
   "main": "./desktop/index.js",
   "bin": {
-    "lionshare": "npx electron desktop"
+    "lionshare": "ENV=development npx electron desktop"
   },
   "scripts": {
     "clean": "./node_modules/.bin/rimraf desktop/dist dist/*",
@@ -12,18 +12,18 @@
     "build": "npm run clean && npm run build:webpack",
     "pack": "npm run build && build --dir",
     "dist": "npm run build && build",
-    "start": "ENV=development ; npx electron desktop",
+    "start": "ENV=development npx electron desktop",
     "dev": "npx concurrently -k 'node desktop/server.dev.js' 'npm start'",
     "lint": "npx eslint 'src/**/*.js' --quiet",
     "lint:staged": "npx lint-staged",
-    "prettier": "prettier 'src/**/*.js' 'desktop/**/*.js' --write --single-quote --trailing-comma es5"
+    "prettier": "npx prettier 'src/**/*.js' 'desktop/**/*.js' --write --single-quote --trailing-comma es5"
   },
   "pre-commit": "lint:staged",
   "lint-staged": {
     "*.js": [
-      "yarn prettier",
-      "yarn lint",
-      "git add"
+      "npx yarn prettier",
+      "npx yarn lint",
+      "npx git add"
     ]
   },
   "build": {
@@ -78,6 +78,8 @@
     "node-static": "^0.7.11",
     "numeral": "^2.0.6",
     "pre-commit": "^1.2.2",
+    "prettier": "^1.15.3",
+    "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-chartjs-2": "^2.7.4",
     "react-dom": "^16.7.0",
@@ -97,5 +99,8 @@
     "webpack": "^4.28.3",
     "webpack-dev-middleware": "^3.5.0",
     "webpack-target-electron-renderer": "^0.4.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.2.0"
   }
 }
